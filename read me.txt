@@ -1,0 +1,32 @@
+Step 1. Run the scrpit below on the database
+        @install.sql
+
+Sample 
+--Create Bucket
+declare
+l_pre_auth varchar2(1200);
+begin
+    procedure create_bucket(p_credential               =>   , --web credential created for OCI using Apex
+	                            p_compartmentid        =>   , --oci compartmentid (ocid1.compartment.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
+	                            p_namespace            =>   , --oci namespace (idbexxxxxxxxm)
+								p_oci_base             =>   , --OCI base (https://objectstorage.us-ashburn-1.oraclecloud.com/n/idbexxxxxxxm/b/)
+								p_oci_bucket_base      =>   , --OCI bucket base (https://objectstorage.us-ashburn-1.oraclecloud.com)
+								p_oci_bucket_expr      =>   , --oci bucket expiration date for pre auth( 2200-12-31T20:30:00Z)
+								p_bucket_name          =>   , --OCI bucket name 
+								p_pre_auth             => l_pre_auth
+								);
+								
+								
+end;					
+
+--upload to oci Bucket
+begin
+	procedure upload_file(p_credential        =>   ,  --web credential created for OCI using Apex
+						  p_oci_bucket_base   =>   ,  --OCI bucket base 
+						  p_bucket_name       =>   ,  --OCI bucket name 
+						  p_file_name         =>   ,  --File Name
+						  p_mime_type         =>   ,  --mime type
+						  p_file              =>      -- File blob
+						  );
+end;
+
