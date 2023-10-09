@@ -1,9 +1,9 @@
 # OCIObjectStorage
- Step 1. Run the scrpit below on the database
-        <p>@install.sql</p>
+<p> Step 1. Run the scrpit below on the database </p>
+           <p>@install.sql</p>
 
-Sample 
---Create Bucket
+<p>Sample </p>
+<p>--Create Bucket</p>
 <p> declare</p>
 <p>l_pre_auth varchar2(1200);</p>
 <p>begin</p>
@@ -20,7 +20,7 @@ Sample
 								
 <p>end;</p>					
 
---upload to oci Bucket
+<p>--upload to oci Bucket</p>
 <p>begin</p>
 	<p>procedure upload_file(p_credential        =>   ,  --web credential created for OCI using Apex</p>
 						  <p>p_oci_bucket_base   =>   ,  --OCI bucket base </p>
