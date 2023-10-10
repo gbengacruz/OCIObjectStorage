@@ -9,9 +9,6 @@
 <p>begin</p>
 <<<<<<< HEAD
     <p>oci_bucket_api.create_bucket(p_credential               =>   , --web credential created for OCI using Apex </p>
-=======
-    <p>procedure create_bucket(p_credential               =>   , --web credential created for OCI using Apex </p>
->>>>>>> f81f2380ad2efcf7c1fd61c84769e27167f66424
 	                            <p>p_compartmentid        =>   , --oci compartmentid (ocid1.compartment.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)</p>
 	                            <p>p_namespace            =>   , --oci namespace (idbexxxxxxxxm)</p>
 								<p>p_oci_base             =>   , --OCI base (https://objectstorage.us-ashburn-1.oraclecloud.com/n/idbexxxxxxxm/b/)</p>
@@ -28,9 +25,6 @@
 <p>begin</p>
 <<<<<<< HEAD
 	<p>oci_bucket_api.upload_file(p_credential        =>   ,  --web credential created for OCI using Apex</p>
-=======
-	<p>procedure upload_file(p_credential        =>   ,  --web credential created for OCI using Apex</p>
->>>>>>> f81f2380ad2efcf7c1fd61c84769e27167f66424
 						  <p>p_oci_bucket_base   =>   ,  --OCI bucket base </p>
 						  <p>p_bucket_name       =>   ,  --OCI bucket name </p>
 						  <p>p_file_name         =>   ,  --File Name</p>
