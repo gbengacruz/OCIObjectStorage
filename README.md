@@ -7,7 +7,6 @@
 <p> declare</p>
 <p>l_pre_auth varchar2(1200);</p>
 <p>begin</p>
-<<<<<<< HEAD
     <p>oci_bucket_api.create_bucket(p_credential               =>   , --web credential created for OCI using Apex </p>
 	                            <p>p_compartmentid        =>   , --oci compartmentid (ocid1.compartment.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)</p>
 	                            <p>p_namespace            =>   , --oci namespace (idbexxxxxxxxm)</p>
@@ -22,8 +21,8 @@
 <p>end;</p>					
 
 <p>--upload to oci Bucket</p>
+
 <p>begin</p>
-<<<<<<< HEAD
 	<p>oci_bucket_api.upload_file(p_credential        =>   ,  --web credential created for OCI using Apex</p>
 						  <p>p_oci_bucket_base   =>   ,  --OCI bucket base </p>
 						  <p>p_bucket_name       =>   ,  --OCI bucket name </p>
