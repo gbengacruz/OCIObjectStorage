@@ -6,7 +6,7 @@ Sample
 declare
 l_pre_auth varchar2(1200);
 begin
-    procedure create_bucket(p_credential               =>   , --web credential created for OCI using Apex
+    oci_bucket_api.create_bucket(p_credential               =>   , --web credential created for OCI using Apex
 	                            p_compartmentid        =>   , --oci compartmentid (ocid1.compartment.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
 	                            p_namespace            =>   , --oci namespace (idbexxxxxxxxm)
 								p_oci_base             =>   , --OCI base (https://objectstorage.us-ashburn-1.oraclecloud.com/n/idbexxxxxxxm/b/)
@@ -21,7 +21,7 @@ end;
 
 --upload to oci Bucket
 begin
-	procedure upload_file(p_credential        =>   ,  --web credential created for OCI using Apex
+	oci_bucket_api.upload_file(p_credential        =>   ,  --web credential created for OCI using Apex
 						  p_oci_bucket_base   =>   ,  --OCI bucket base 
 						  p_bucket_name       =>   ,  --OCI bucket name 
 						  p_file_name         =>   ,  --File Name
